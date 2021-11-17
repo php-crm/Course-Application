@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course Application</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="row">
+  <div class="col-75">
+    <div class="container1">
+      <center><h2>Course Application</h2></center>
+      <form action="submit_phpcrm_form.php" method="POST">
+        <div class="row">
+          <div class="col-50">
+            <input type="text" id="name" required  name="name" placeholder="Full name">  
+          </div>
+         </div>
+         <div class="row">
+          <div class="col-50">
+            <input type="email" name="email" required placeholder="Email">
+          </div>
+          <div class="col-50">
+             <input type="number" name="phone" required placeholder="Phone">
+          </div>
+         </div>
+    <div class="row">
+      <div class="col-50">
+        <label for="">Which course are you applying for?</label><br><br>
+          <input type="radio" required name="course" value="Course A"> Course A <br><br>
+          <input type="radio" required name="course" value="Course B"> Course B <br><br>
+          <input type="radio" required name="course" value="Course B"> Course C <br><br>
+      </div>     
+    </div>
+    <div class="row">
+       <div class="col-50">
+         <label for="">Date of birth</label>
+       <input type="date" id="name" name="dob" required>  
+    </div> 
+    <div class="col-50">
+      <br><input type="radio" name="gender" required  value="MALE">MALE &nbsp;&nbsp;&nbsp;
+    <input type="radio" name="gender" required  value="FEMALE">FEMALE
+    </div>    
+  </div>
+    <div class="row">
+        <div class="col-50">
+          <label>Education</label>
+          <select name="education" id="">
+            <option value="School">School</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Graduation">Graduation</option>
+            <option value="Master">Master</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-50">
+        <textarea name="address" id="address"  rows="2" placeholder="Address"></textarea>
+      </div>     
+ </div>
+ <div class="row">
+     <div class="col-50">
+         <input type="text" name="city" required placeholder="City">
+     </div>
+     <div class="col-50">
+        <input type="text" name="state" required placeholder="State">
+    </div>
+ </div>
+ <div class="row">
+    <div class="col-50">
+        <input type="number" name="zip_code" required placeholder="Zip Code">
+    </div>
+    <div class="col-50">
+       <input type="text" name="country" required placeholder="Country">
+   </div>
+</div>
+        <input type="submit" value="Submit" class="btn">
+       </div>
+       </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
